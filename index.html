@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesón Juanito | Armuña de Almanzora</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+:root {
+    --rust:#bc6c25;
+    --clay:#dda15e;
+    --dark:#283618;
+    --light:#fefae0;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
+body{background:var(--light);color:var(--dark);}
+
+/* HERO CON IMAGEN LOCAL */
+header{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),
+    url('hero.jpg'); /* IMAGEN LOCAL */
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+h1{font-family:'Lora',serif;font-size:4rem;}
+.tagline{letter-spacing:3px;margin-top:10px;}
+
+.promo-bar{
+    background:var(--rust);
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-weight:bold;
+}
+
+.section{padding:70px 10%;text-align:center;}
+.section-title{
+    font-family:'Lora',serif;
+    font-size:2.5rem;
+    color:var(--rust);
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    height:400px;
+    object-fit:cover;
+}
+
+/* BOTONES */
+.btn{
+    display:inline-block;
+    padding:15px 25px;
+    margin:10px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.call{background:var(--clay);color:var(--dark);}
+.whatsapp{background:#25D366;color:white;}
+.menu{background:var(--rust);color:white;}
+
+iframe{
+    border-radius:10px;
+    margin-top:15px;
+    width:100%;
+    height:250px;
+    border:0;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    h1{font-size:2.5rem;}
+    .section{padding:40px 5%;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mesón Juanito</h1>
+<p class="tagline">Sabor auténtico en Armuña de Almanzora</p>
+</header>
+
+<div class="promo-bar">
+🌟 Especialidad: Arroz con Bogavante
+</div>
+
+<section class="section">
+<h2 class="section-title">Logros</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Mejor Bogavante de la comarca</h3>
+<p>Celebrado bogavante por todos los que lo prueban.</p>
+</div>
+
+<div class="card">
+<h3>Establecimiento Representativo de Armuña</h3>
+<p>Junto a Restaurante La Piscina.</p>
+</div>
+
+<div class="card">
+<h3>Referente Gastronomico</h3>
+<p>Participa activamente en la Ruta de Sabores del Almanzora.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Nuestra Carta</h2>
+
+<p>Puedes ver nuestra carta completa aquí:</p>
+
+<a href="carta.pdf" target="_blank" class="btn menu">
+📄 Ver Carta
+</a>
+
+<p style="margin-top:15px; opacity:0.7;">
+*Actualizada regularmente
+</p>
+</section>
+
+<section class="section">
+<h2 class="section-title">Nuestro Ambiente</h2>
+
+<div class="grid gallery">
+<img src="foto1.jpg" alt="Local 1">
+<img src="foto2.jpg" alt="Local 2">
+<img src="foto3.jpg" alt="Local 3">
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Reserva tu mesa</h2>
+
+<a href="tel:654794575" class="btn call">📞 Llamar</a>
+<a href="https://wa.me/34654794575" class="btn whatsapp">💬 WhatsApp</a>
+
+<h3 style="margin-top:30px;">Dónde estamos</h3>
+
+<p>Mesón Juanito, 04888 Armuña de Almanzora, Almería</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1234!2d-2.3333!3d37.3333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDIwJzAwLjAiTiAywrAyMCcwMC4wIlc!5e0!3m2!1ses!2ses!4v1620000000000"></iframe>
+
+</section>
+
+<footer style="text-align:center;padding:20px;">
+Mesón Juanito © 2026
+</footer>
+<footer style="text-align:center;padding:20px;">
+Web hecha por @almanzora.digital (instagram)
+</footer>
+
+</body>
+</html>
