@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mesón Juanito | Tradición y Sabor en Armuña de Almanzora</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Montserrat:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-container": "#fffbff",
+                "primary": "#8f4a00",
+                "tertiary": "#755717",
+                "on-surface-variant": "#544438",
+                "background": "#fefae0",
+                "tertiary-fixed": "#ffdea5",
+                "outline": "#877366",
+                "surface-container-highest": "#e7e3ca",
+                "inverse-surface": "#323120",
+                "secondary-container": "#fdbd77",
+                "on-primary-fixed-variant": "#6f3800",
+                "surface-container-high": "#ede9cf",
+                "secondary-fixed": "#ffdcbb",
+                "surface-container-low": "#f8f4db",
+                "on-tertiary-fixed": "#261900",
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#ffdcc4",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#1d1c0d",
+                "tertiary-container": "#90702e",
+                "terracotta-rich": "#8E4A16",
+                "on-tertiary": "#ffffff",
+                "tertiary-fixed-dim": "#e9c176",
+                "surface-variant": "#e7e3ca",
+                "inverse-primary": "#ffb781",
+                "on-primary-fixed": "#2f1400",
+                "on-error": "#ffffff",
+                "surface-tint": "#924c00",
+                "on-secondary-container": "#784a0d",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "on-error-container": "#93000a",
+                "on-tertiary-container": "#fffbff",
+                "surface-container": "#f2efd5",
+                "parchment-deep": "#F2EBC7",
+                "surface-bright": "#fefae0",
+                "on-secondary-fixed": "#2b1700",
+                "surface-dim": "#dedbc2",
+                "surface": "#fefae0",
+                "primary-fixed-dim": "#ffb781",
+                "on-background": "#1d1c0d",
+                "inverse-on-surface": "#f5f1d8",
+                "on-primary": "#ffffff",
+                "outline-variant": "#d9c2b3",
+                "on-secondary-fixed-variant": "#673d00",
+                "primary-container": "#ae611a",
+                "secondary-fixed-dim": "#faba75",
+                "on-tertiary-fixed-variant": "#5d4201",
+                "moss-dark": "#283618",
+                "secondary": "#835418"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "gutter": "24px",
+                "margin-desktop": "80px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "max-width": "1200px"
+            },
+            "fontFamily": {
+                "label-caps": ["Montserrat"],
+                "headline-xl-mobile": ["Playfair Display"],
+                "body-lg": ["Montserrat"],
+                "headline-md": ["Playfair Display"],
+                "headline-lg": ["Playfair Display"],
+                "headline-xl": ["Playfair Display"],
+                "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-md": ["28px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "headline-lg": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .spanish-tile-pattern {
+        background-color: #fefae0;
+        background-image: radial-gradient(#dda15e 0.5px, transparent 0.5px);
+        background-size: 24px 24px;
+        opacity: 0.1;
+      }
+      .dot-leader {
+        flex-grow: 1;
+        border-bottom: 1px dotted #877366;
+        margin: 0 8px;
+        margin-bottom: 5px;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TOP APP BAR -->
+<nav class="fixed top-0 w-full z-50 border-b border-outline/20 bg-surface/95 backdrop-blur-sm h-20">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-full max-w-max-width mx-auto">
+<a class="flex items-center gap-2" href="#">
+<img alt="Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLuUREOwRkZWtZxP6rbFLJVxhrChKhybZ_EopRW2Te0z6dwRpjrWeEr4ZxgOrgp0s2JVVK8Ubf4l_wkdWzQz2LuJTPHllKu0m10f5p18QZDEbTRMIO1szdzfnEUTE7-6rNJptafPlbMiGnfyHTn-cllAZqodeW7bAOAtVTP84A0YH8O05AFqyLQyMtlwJZGaAtPc-cLCUlK58nAcBayCKNrEFPPbbglc7_uf9oLLtWSq7b8WdUjjjY2FusnmYy7SRi3lR-iXmRQrDs"/>
+<span class="font-headline-md text-headline-md text-terracotta-rich tracking-tight">Mesón Juanito</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-container transition-all duration-300" href="#carta">Carta</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-container transition-all duration-300" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-container transition-all duration-300" href="#galeria">Galería</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-container transition-all duration-300" href="#contacto">Reservas</a>
+</div>
+<a class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-label-caps text-label-caps hover:scale-95 transition-transform duration-300 shadow-sm flex items-center gap-2" href="https://wa.me/34654794575" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                RESERVAR MESA
+            </a>
+</div>
+</nav>
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0">
+<img alt="Arroz con Bogavante Hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffgr2txAJow5VzXvUwb1MNfqerL8eKBxVgL7Y_gaRGxYsuruTtMhr9vI0l_38eFDnWGwhyeLLFt2-Wn2eyPvPN8jHdwxwh-3EeaHCEO5bC-2QIk66fmH5bjqizZYshnvRpd9ACgx_64iC6v2m38GM9hmAG7hSKPgbzdt8n5vswH9J1sh0X5cMk4P6XdUg7eZe-6NjyRxjErxcXhLbnA7Us_Ss1fKP8c7AMYhBIWkutE3glWI0bOcPoa_nk0OjblIGeatzmi6aJK0X"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-on-primary-container">
+<div class="max-w-2xl fade-in" id="hero-content">
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6 leading-tight">Sabor auténtico en el corazón del Almanzora</h1>
+<p class="font-body-lg text-body-lg mb-10 opacity-90">Especialistas en arroz con bogavante desde hace años en Armuña de Almanzora, Almería. Tradición servida en cada plato.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-terracotta-rich text-on-primary px-8 py-4 rounded font-label-caps text-label-caps text-center hover:bg-primary transition-colors" href="#">VER LA CARTA (PDF)</a>
+<a class="bg-secondary-container text-moss-dark px-8 py-4 rounded font-label-caps text-label-caps text-center shadow-[0_0_15px_rgba(253,189,119,0.3)] hover:scale-105 transition-transform" href="https://wa.me/34654794575">RESERVAR AHORA</a>
+</div>
+</div>
+</div>
+</section>
+<!-- VALUE PROP -->
+<section class="py-24 bg-surface-container-low relative">
+<div class="absolute inset-0 spanish-tile-pattern pointer-events-none"></div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center mb-16">
+<div class="fade-in flex flex-col items-center">
+<div class="w-16 h-16 bg-parchment-deep rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="restaurant">restaurant</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Mejor bogavante de la comarca</h3>
+<p class="text-on-surface-variant">Seleccionamos cada pieza para garantizar un sabor intenso y una textura inigualable.</p>
+</div>
+<div class="fade-in flex flex-col items-center" style="transition-delay: 100ms;">
+<div class="w-16 h-16 bg-parchment-deep rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="location_on">location_on</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Emblema de Armuña</h3>
+<p class="text-on-surface-variant">Un establecimiento representativo donde la hospitalidad es nuestra seña de identidad.</p>
+</div>
+<div class="fade-in flex flex-col items-center" style="transition-delay: 200ms;">
+<div class="w-16 h-16 bg-parchment-deep rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="award_star">award_star</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Sabores del Almanzora</h3>
+<p class="text-on-surface-variant">Orgullosos miembros de la ruta gastronómica más auténtica de nuestra provincia.</p>
+</div>
+</div>
+<div class="text-center max-w-3xl mx-auto fade-in">
+<p class="font-body-lg text-body-lg text-primary italic leading-relaxed">"En Mesón Juanito cocinamos con producto local, tradición y pasión. Un lugar donde cada visita se convierte en un recuerdo imborrable."</p>
+</div>
+</div>
+</section>
+<!-- STAR DISH -->
+<section class="py-24 bg-parchment-deep overflow-hidden">
+<div class="w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2 fade-in">
+<div class="relative group">
+<div class="absolute -inset-4 border border-primary/20 rounded group-hover:-inset-2 transition-all duration-500"></div>
+<img alt="Nuestra especialidad Arroz con Bogavante" class="w-full h-[500px] object-cover rounded shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffgr2txAJow5VzXvUwb1MNfqerL8eKBxVgL7Y_gaRGxYsuruTtMhr9vI0l_38eFDnWGwhyeLLFt2-Wn2eyPvPN8jHdwxwh-3EeaHCEO5bC-2QIk66fmH5bjqizZYshnvRpd9ACgx_64iC6v2m38GM9hmAG7hSKPgbzdt8n5vswH9J1sh0X5cMk4P6XdUg7eZe-6NjyRxjErxcXhLbnA7Us_Ss1fKP8c7AMYhBIWkutE3glWI0bOcPoa_nk0OjblIGeatzmi6aJK0X"/>
+</div>
+</div>
+<div class="w-full lg:w-1/2 fade-in">
+<span class="font-label-caps text-label-caps text-terracotta-rich mb-4 block">NUESTRA ESPECIALIDAD</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl mb-6 text-moss-dark">Arroz con Bogavante</h2>
+<p class="font-body-lg text-body-lg mb-8 text-on-surface-variant leading-relaxed">
+                        Utilizamos ingredientes frescos de la lonja y nuestra huerta para crear una explosión de sabor mediterráneo. Nuestro arroz se prepara de forma artesanal, respetando los tiempos de cocción y el reposo necesario para que cada grano absorba el intenso caldo de bogavante. Una receta familiar que ha traspasado generaciones.
+                    </p>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-on-surface">Bogavante vivo seleccionado diariamente</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-on-surface">Arroz bomba de primera calidad</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-on-surface">Sofrito casero a fuego lento</span>
+</div>
+</div>
+<a class="inline-block bg-terracotta-rich text-white px-10 py-4 rounded font-label-caps text-label-caps hover:bg-primary transition-all shadow-md" href="https://wa.me/34654794575">RESERVA TU MESA PARA PROBARLO</a>
+</div>
+</div>
+</div>
+</section>
+<!-- MENU SECTION -->
+<section class="py-24 bg-surface" id="carta">
+<div class="w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center mb-16 fade-in">
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl mb-4">Descubre toda nuestra carta</h2>
+<p class="text-on-surface-variant font-body-lg mb-10">Carnes a la brasa, pescado fresco y mucho más</p>
+<a class="inline-flex items-center gap-3 bg-moss-dark text-on-primary px-10 py-5 rounded font-label-caps text-label-caps hover:bg-black transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="picture_as_pdf">picture_as_pdf</span>
+                VER CARTA COMPLETA (PDF)
+            </a>
+</div>
+<div class="w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Arroces -->
+<div class="group relative overflow-hidden rounded-lg shadow-lg aspect-[3/4] fade-in">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A close-up shot of a steaming Spanish rice dish in a traditional paella pan, showcasing golden grains, fresh herbs, and local seafood. The lighting is warm and golden, reminiscent of a rustic Mediterranean restaurant interior at midday. The overall aesthetic is rich and appetizing, with earthy tones and vibrant pops of saffron yellow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO9fh0XzAxU1fEGMmZmYNT6bRqem5ByWaULBE0Oln7OLi9yVuH4OquFqoZCmysnCFK9FcmF48vCGCBostC4UNzFqbj2GyzEqrOduSs8NjEuB2m5YNusgvxVvFCCu82jTxvQtgwVo-eKcwGwWupA6XSPOyTQKIywAPXr8SuSSrLl8gPglcJD8nhuKJoVHkzuzerO8hKv3widUAnLH3Jz2Ay56XEI81N8xyGCU9IfCT37sDXorkjXr8AQwvuonZ2AlTCZyHhFxfzWGl7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-white font-headline-lg text-headline-md mb-2">Arroces</h3>
+<p class="text-white/80 font-body-md mb-4">Nuestra seña de identidad.</p>
+</div>
+</div>
+<!-- Carnes -->
+<div class="group relative overflow-hidden rounded-lg shadow-lg aspect-[3/4] fade-in" style="transition-delay: 100ms;">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Succulent cuts of prime beef grilling over a rustic wood-fired open flame, capturing the intense texture of the seared meat and glowing embers. The scene is dramatic with high contrast, deep shadows, and warm orange highlights from the fire. The style is artisanal and raw, emphasizing the traditional Spanish brasa cooking technique." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS63UstWWwNPg5rKhtqg2ckEPnqsBUigezJnM_mWAUnOhtMA2Z40aiuqbrDn75gHDj8HJ3uiqS5bl9NaJ-7cwO2Hhdd7tbky-DaOeNrpOMiaI7UImZVBow-YPXncbGepXGuHUeDd84XoHZlxHSvRlSLWlX-QCF30RonwzMvKoKvkW1kJW_V18uygRaD1XhInmovEuMH8kSdeDNClxBObuQ5rAQASLk1wBB2ZeELnaaoIuRchb5lyOgT6Mqv72dzdFzkD16Ah4nNKny"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-white font-headline-lg text-headline-md mb-2">Carnes a la brasa</h3>
+<p class="text-white/80 font-body-md mb-4">El mejor corte con aroma a leña.</p>
+</div>
+</div>
+<!-- Pescado -->
+<div class="group relative overflow-hidden rounded-lg shadow-lg aspect-[3/4] fade-in" style="transition-delay: 200ms;">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Exquisitely prepared fresh Mediterranean fish served on a ceramic platter, garnished with lemon and high-quality olive oil. The setting is a minimalist yet warm restaurant table with parchment-style textures. The lighting is soft, natural, and bright, highlighting the delicate textures of the fish and the vibrant colors of the garnish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-lBSfLWaGT9tKHOAti_CDbOx_SNHKgshrYCpLyWjq2Si_wtxXYuRyJtWve717HVzYzfx1n_W7BnimV7IEPhSzmcdRkYSISe-7M4k3JsWEbkr7-BXgpuHJaY_-X9tCoXuWGg3dAChJG6U7WpzylAPJYIvc5BEOHzC1QkcsjNj2GsaAvs8VTgrEXA9OF2SWyqlWvdyB20cjFMCy3lTMRMO8ZjFuhs2KAFuulaMm1w3j9kW8ktCwjUVwBcKzcZsdqeGYwCsmb5ZKj4m"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-white font-headline-lg text-headline-md mb-2">Pescado fresco</h3>
+<p class="text-white/80 font-body-md mb-4">Directo de la lonja a su mesa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- GALLERY -->
+<section class="py-24 bg-surface-container-low" id="galeria">
+<div class="w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl mb-12 text-center fade-in">Nuestro ambiente</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="aspect-square overflow-hidden fade-in">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="The warm and inviting interior of a traditional Spanish Mesón, featuring exposed wooden beams, terracotta floor tiles, and rustic stone walls. The atmosphere is cozy and authentic, with soft, dim lighting creating long shadows and a sense of history. The focus is on the textures of the natural materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj3inpwW9JcmG4_cJD6QiG_4b1D4TRaCL2Wlvwckj52s8aj9KLGkH8uRiJj1S3-PskKsgHu2yumMmGdJorRkODaRqX7U8qsTKIsLOgCDYaMyX3gfLEDMnAwbcUNTfHJkRkrRVjIGq4NiYcqEhuqTWFK5S01YXiQBs0zMbVxkwjMR7ej9unFRtQ5bgj7C4e9BA3AldKC_zkivF4vaSPop_1VhPPumex0zB5NuvK3t2tUjA-EuvDnHKtxilXIJvo_0CL3QV0r0bKzIYD"/>
+</div>
+<div class="aspect-square overflow-hidden fade-in" style="transition-delay: 100ms;">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A beautifully set wooden dining table in a rustic restaurant, with candlelight reflecting off wine glasses and white ceramic plates. The background is a soft blur of a cozy fireplace and stone walls. The mood is romantic and tranquil, emphasizing the refined yet heritage-focused dining experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPBdDCQvx_vIzDl2cwbkkWG5FW9axSgKacO6jDzTpDvtO3dSf3k_jiOSvgLz0OcXKSkH93OZE6YXWphq8HJItn2qNYdi292jCwlDh2hORoF3xCr4GCU9laoLe4ih1EweYerR6AvTM_zsN5KyuVQw8ir3zlTRxZyXRIeZk6AB476AKiCviy9Mk7-Bl271y2IZcjlhekBaevTyI5EXNi2vQ3vBlZzQCn2FvUYejmiNkdhKw4rpCdNr5FhDvbCCVQfEOgpZhKiSvPCQV4"/>
+</div>
+<div class="aspect-square overflow-hidden fade-in" style="transition-delay: 200ms;">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A chef in a clean, professional kitchen meticulously plating a gourmet Spanish dish. The focus is on the hands and the vibrant colors of the fresh ingredients. The lighting is sharp and professional, highlighting the artisanal quality and care put into the food preparation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgznnNYFHE0IlRLDyXQkwnGTWEDV9Wzpi8YVgJp8_t7vdSvykU8cdzFwJV3lxegCKlZmi_SndeUC5g3sSFxl-sxGRqP3jWiv2m2MLi_eQEK0AQzZ4-_AA2yDKQygAlgj6hci3lGj5lV8OzNliKA3DNr371X9KVoled-uBrPGeN1pq0brEP9CxqLC4NoCtOWwb3RO049duyEsmhEdL3zmq_QlPkqQuXxseqvYG7cblM_oI-K7YRQbesSykDR6v65Oz4cS9zTMa0psuC"/>
+</div>
+<div class="aspect-square overflow-hidden fade-in" style="transition-delay: 150ms;">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A detailed macro shot of a crusty loaf of artisanal bread next to a small bowl of golden, shimmering extra virgin olive oil. The background is a textured parchment surface. The lighting is warm and directional, emphasizing the crunch of the bread and the liquid texture of the oil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAatCVIXHtyHD5K5ur5RSmW0qKmZXN3I_C79H7R3_MLTZWYIFykY9CCvJz3jYQBm_F9NmzYi1BzGDSCH3yGeAxYTgW1LGwWF4oWx2FnaIFwA7-6QoLDQJATC3aorQgpqB61HpgoDu5ROIy8W729zNp26SaE6sgqYqOL2OSdZfsbk6qXddj1TrNXSXwYuE8oYoKm-iiX0jLKsnk5hrNl5HYWm5xHn67Gjel2RBMSAdWjSY8PSGjsbTlIzSHAQjlS0iXJwsLaM-H2Oij8"/>
+</div>
+<div class="aspect-square overflow-hidden fade-in" style="transition-delay: 250ms;">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A collection of fine Spanish wines displayed in a rustic cellar setting with old wooden barrels and dim ambient lighting. The bottles feature elegant labels, and the scene exudes a sense of heritage and high-quality selection. The color palette is dominated by deep reds and warm wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuxGZvN08f8UO4T2fNyyWKtnkC21EVuWf9CHWrixENMTG7hWurZk7tMVdu-JDV0gS42Q7_RCDGGvrRBVlCJAfyi7U0DIbbKOtsRFtNrjFLzAEeJNQIQYYKo136BP-qKMPRW_GT0Ul3vUNj9w7KVrbye2_xjBxGs0gd66-4pKxthrKWnusJRtcqWotTsmnwVRSk_lpLmpS8lTgKFnsORrhESJwyoDx3lUlvPdUGmTiQ3SNn74-9_edh9Wy3SI1eGpaWU0wsr-M4q6X_"/>
+</div>
+<div class="aspect-square overflow-hidden fade-in" style="transition-delay: 350ms;">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A lively yet sophisticated scene of a family dining together in a warm restaurant, laughing and sharing dishes. The background is softly blurred stone and wood. The lighting is warm and festive, capturing a moment of genuine connection and culinary enjoyment in an authentic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdGMiC3L7c-IN3oenah7kgNuk979zTYZhl8OkfksXeFFH6A9XSxBzmATfli-OZc8ZJrUmuVd29yqxXHs7gzZ24thLvn_9WP1ppYJujC7upgS_X35GPXQxiFPM4DLK6sV5RXA-ANgHylFoPItugtIb8IB-1JgSrZAM6TcfovpVUbwxDYM7Cbh0rNF1uB2IvvoiA47pXzfUHD4G_uVdnoB8hq1TZcK9TR-6zDAtMz3on5mNFEcXi_3XE1E494UhgF--Z415llUG6rHil"/>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="py-24 bg-surface">
+<div class="w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl mb-16 text-center fade-in">Lo que dicen nuestros clientes</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-parchment-deep p-8 rounded border border-outline/10 shadow-sm fade-in">
+<div class="flex text-terracotta-rich mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md italic mb-6 text-on-surface-variant">"El mejor arroz con bogavante que he comido en mi vida. El servicio es impecable y el lugar tiene un encanto único. Volveremos sin duda."</p>
+<p class="font-label-caps text-label-caps text-primary">— MARÍA G., ALMERÍA</p>
+</div>
+<div class="bg-parchment-deep p-8 rounded border border-outline/10 shadow-sm fade-in" style="transition-delay: 100ms;">
+<div class="flex text-terracotta-rich mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md italic mb-6 text-on-surface-variant">"Un sitio espectacular para ir en familia. Las carnes a la brasa tienen ese sabor de antes que ya cuesta encontrar. ¡100% recomendable!"</p>
+<p class="font-label-caps text-label-caps text-primary">— PEDRO J., MACAEL</p>
+</div>
+<div class="bg-parchment-deep p-8 rounded border border-outline/10 shadow-sm fade-in" style="transition-delay: 200ms;">
+<div class="flex text-terracotta-rich mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md italic mb-6 text-on-surface-variant">"Vinimos por recomendación y superó las expectativas. El bogavante estaba increíblemente fresco. De lo mejor del Valle del Almanzora."</p>
+<p class="font-label-caps text-label-caps text-primary">— LUCÍA R., MADRID</p>
+</div>
+</div>
+</div>
+</section>
+<!-- BOOKING SECTION -->
+<section class="py-24 bg-inverse-surface text-on-primary-container relative">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/dark-leather.png')]"></div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center">
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl mb-6">¿Listo para reservar tu mesa?</h2>
+<p class="font-body-lg mb-12 opacity-80">Asegura tu lugar en nuestra mesa y disfruta de una experiencia gastronómica sin igual.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+<a class="bg-primary text-white px-10 py-5 rounded font-label-caps text-label-caps hover:scale-105 transition-transform flex items-center justify-center gap-3" href="tel:654794575">
+<span class="material-symbols-outlined">call</span>
+                    LLAMAR AHORA: 654 794 575
+                </a>
+<a class="bg-secondary-container text-moss-dark px-10 py-5 rounded font-label-caps text-label-caps hover:scale-105 transition-transform flex items-center justify-center gap-3" href="https://wa.me/34654794575">
+<span class="material-symbols-outlined">chat</span>
+                    RESERVAR POR WHATSAPP
+                </a>
+</div>
+<div class="inline-block border border-on-primary-container/20 px-8 py-4 rounded-full">
+<p class="font-label-caps text-label-caps">HORARIO: ABIERTO TODOS LOS DÍAS DE 13:00 A 16:30 Y DE 20:00 A 23:00</p>
+</div>
+</div>
+</section>
+<!-- CONTACT & MAP -->
+<section class="py-24 bg-surface-container" id="contacto">
+<div class="w-full px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="fade-in">
+<h2 class="font-headline-lg text-headline-lg mb-8">Dónde encontrarnos</h2>
+<div class="space-y-6 mb-10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold text-on-surface mb-1">Dirección</p>
+<p class="text-on-surface-variant">Armuña de Almanzora, Almería, España</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="call">call</span>
+<div>
+<p class="font-bold text-on-surface mb-1">Teléfono</p>
+<p class="text-on-surface-variant">654 794 575</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<p class="font-bold text-on-surface mb-1">Horario</p>
+<p class="text-on-surface-variant">Almuerzos: 13:00 - 16:30<br/>Cenas: 20:00 - 23:00</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-parchment-deep rounded border border-primary/10">
+<h4 class="font-headline-md mb-4">¿Tienes alguna duda?</h4>
+<p class="text-on-surface-variant mb-6">Contáctanos directamente por WhatsApp para cualquier consulta sobre alergias, menús de grupo o eventos especiales.</p>
+<a class="text-primary font-bold hover:underline flex items-center gap-2" href="https://wa.me/34654794575">
+                            Enviar mensaje por WhatsApp 
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="h-[500px] rounded-lg overflow-hidden shadow-xl fade-in border-4 border-white">
+<iframe allowfullscreen="" data-location="Armuña de Almanzora" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25376.02375304501!2d-2.4196325!3d37.3424384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6555d380924c43%3A0x24f2525efd7bdd9!2sMes%C3%B3n%20Juanito!5e0!3m2!1ses!2ses!4v1775896869901!5m2!1ses!2ses" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-surface-container dark:bg-inverse-surface border-t border-outline/10">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-gutter max-w-max-width mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3">
+<img alt="Logo Footer" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLuUREOwRkZWtZxP6rbFLJVxhrChKhybZ_EopRW2Te0z6dwRpjrWeEr4ZxgOrgp0s2JVVK8Ubf4l_wkdWzQz2LuJTPHllKu0m10f5p18QZDEbTRMIO1szdzfnEUTE7-6rNJptafPlbMiGnfyHTn-cllAZqodeW7bAOAtVTP84A0YH8O05AFqyLQyMtlwJZGaAtPc-cLCUlK58nAcBayCKNrEFPPbbglc7_uf9oLLtWSq7b8WdUjjjY2FusnmYy7SRi3lR-iXmRQrDs"/>
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed">Mesón Juanito</span>
+</div>
+<p class="text-on-surface-variant dark:text-outline-variant text-center md:text-left">Tradición y Sabor en el corazón de Almería.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-terracotta-rich dark:hover:text-primary-fixed transition-colors font-label-caps text-label-caps" href="#">AVISO LEGAL</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-terracotta-rich dark:hover:text-primary-fixed transition-colors font-label-caps text-label-caps" href="#">PRIVACIDAD</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-terracotta-rich dark:hover:text-primary-fixed transition-colors font-label-caps text-label-caps" href="#">COOKIES</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-terracotta-rich dark:hover:text-primary-fixed transition-colors font-label-caps text-label-caps" href="#contacto">CONTACTO</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="facebook">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="photo_camera">photo_camera</span>
+</a>
+</div>
+</div>
+<div class="w-full text-center py-6 border-t border-outline/5 opacity-60">
+<p class="font-label-caps text-[10px] tracking-widest text-on-surface-variant">Mesón Juanito © 2026 · Armuña de Almanzora, Almería</p>
+</div>
+</footer>
+<!-- FLOATING WHATSAPP -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform animate-bounce hover:animate-none" href="https://wa.me/34654794575" target="_blank">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</a>
+<script>
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body></html>
